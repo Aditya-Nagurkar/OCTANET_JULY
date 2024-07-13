@@ -342,7 +342,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: #191970;
+  background-color: var(--midnight-blue);
   color: var(--white);
   padding-block-start: calc(var(--section-padding) + 70px);
 }
