@@ -326,7 +326,7 @@ body {
   transition: var(--transition-1);
 }
 
-.navbar-link:is(:hover, :focus, .active) { color: var(--pumpkin); }
+.navbar-link:is(:hover, :focus, :active) { color: var(--pumpkin); }
 
 .navbar .btn { margin-block: 8px; }
 
