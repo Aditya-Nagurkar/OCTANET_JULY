@@ -17,7 +17,7 @@
    * colors
    */
 
-  --midnight-blue: hsl(240, 64%, 27%);
+  --black: hsl(0, 0%, 0%);
   --dark-purple: hsl(268, 22%, 15%);
   --eerie-black: hsl(240, 4%, 10%);
   --davys-gray: hsl(0, 0%, 34%);
@@ -339,7 +339,7 @@ body {
 \*-----------------------------------*/
 
 .hero {
-  background-color: var(--midnight-blue);
+  background-color: var(--black);
   color: var(--white);
   padding-block-start: calc(var(--section-padding) + 70px);
 }
@@ -451,7 +451,7 @@ body {
 \*-----------------------------------*/
 
 .app {
-  background-color: var(--russian-violet);
+  background-color: var(--black);
   color: var(--white);
 }
 
