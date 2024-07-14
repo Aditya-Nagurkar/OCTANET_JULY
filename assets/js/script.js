@@ -53,7 +53,7 @@ window.addEventListener("scroll", function () {
   }
 });
 
-
+const elements = document.querySelectorAll('.w-100')
 const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
          if (entry.isIntersecting) {
