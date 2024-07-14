@@ -1004,3 +1004,14 @@ body {
   .back-top-btn.active { transform: translateX(-80px); }
 
 }
+/* CSS */
+.image-slide-up {
+  opacity: 0;
+  transform: translateY(100px);
+  transition: opacity 0.6s, transform 0.6s;
+}
+
+.image-slide-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
