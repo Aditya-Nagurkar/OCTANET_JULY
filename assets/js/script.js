@@ -52,3 +52,20 @@ window.addEventListener("scroll", function () {
     backTopBtn.classList.remove("active");
   }
 });
+
+
+  const observer = new IntersectionObserver((entries, observer) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+        observer.unobserve(entry.target); 
+      }
+    });
+  });
+
+  const images = document.querySelectorAll('.w-100');
+  images.forEach(image => {
+    image.classList.add('image-slide-up');
+    observer.observe(image);
+  });
+});
