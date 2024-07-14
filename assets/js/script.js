@@ -54,18 +54,18 @@ window.addEventListener("scroll", function () {
 });
 
 
-  const observer = new IntersectionObserver((entries, observer) => {
+const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
-      if (entry.isIntersecting) {
-        entry.target.classList.add('visible');
-        observer.unobserve(entry.target); 
-      }
+         if (entry.isIntersecting) {
+            entry.target.classList.add('slide-up'); 
+        } else {
+             entry.target.classList.remove('slide-up');
+        }
     });
-  });
+},{
+    threshold: 0.1
+});
 
-  const images = document.querySelectorAll('.w-100');
-  images.forEach(image => {
-    image.classList.add('image-slide-up');
-    observer.observe(image);
-  });
+elements.forEach(element => {
+     observer.observe(element);
 });
