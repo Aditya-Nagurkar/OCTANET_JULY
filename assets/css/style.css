@@ -84,7 +84,10 @@ span,
 button,
 ion-icon { display: block; }
 
-img { height: auto; }
+img { 
+height: auto;
+
+}
 
 button {
   background: none;
