@@ -2,9 +2,7 @@
 
 
 
-/**
- * add event on element
- */
+
 
 const addEventOnElem = function (elem, type, callback) {
   if (elem.length > 1) {
@@ -18,9 +16,7 @@ const addEventOnElem = function (elem, type, callback) {
 
 
 
-/**
- * navbar toggle
- */
+
 
 const navbar = document.querySelector("[data-navbar]");
 const navToggler = document.querySelector("[data-nav-toggler]");
@@ -36,9 +32,7 @@ addEventOnElem(navLinks, "click", closeNavbar);
 
 
 
-/**
- * header active
- */
+
 
 const header = document.querySelector("[data-header]");
 const backTopBtn = document.querySelector("[data-back-top-btn]");
